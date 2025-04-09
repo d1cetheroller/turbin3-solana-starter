@@ -9,9 +9,7 @@ import {
   createNft,
   mplTokenMetadata
 } from "@metaplex-foundation/mpl-token-metadata";
-
 import wallet from "../../keys/turbin3.json";
-
 import base58 from "bs58";
 
 const RPC_ENDPOINT = "https://api.devnet.solana.com";

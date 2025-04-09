@@ -8,7 +8,6 @@ import {
 } from "@metaplex-foundation/umi";
 import { irysUploader } from "@metaplex-foundation/umi-uploader-irys";
 
-// Create a devnet connection
 const umi = createUmi("https://api.devnet.solana.com");
 
 let keypair = umi.eddsa.createKeypairFromSecretKey(new Uint8Array(wallet));
@@ -53,5 +52,6 @@ umi.use(signerIdentity(signer));
   }
 })();
 
+//
 // https://arweave.net/DPaMeShNFFHkP8CSjGQfse4pwTtqHMVbHtqKPBkNsozV
 // https://devnet.irys.xyz/GVzuHJpKTJBdchaZRPE49SpBMx1N8YovDwWSQunkNuKS
