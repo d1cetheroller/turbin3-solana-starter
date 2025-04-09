@@ -15,10 +15,8 @@ import {
 import { bs58 } from "@coral-xyz/anchor/dist/cjs/utils/bytes";
 import { PublicKey } from "@solana/web3.js";
 
-// Define our Mint address
 const mint = publicKey("9MrsUu1wDtS9vmPST1L6WgeyUCTga9PZ5gFHauXquUHJ");
 
-// Create a UMI connection
 const umi = createUmi("https://api.devnet.solana.com");
 const keypair = umi.eddsa.createKeypairFromSecretKey(new Uint8Array(wallet));
 const signer = createSignerFromKeypair(umi, keypair);
